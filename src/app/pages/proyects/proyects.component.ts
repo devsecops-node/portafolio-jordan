@@ -11,12 +11,12 @@ export interface ProyectsUI {
 @Component({
   selector: 'app-proyects',
   standalone: true,
-  imports: [CommonModule,RouterModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './proyects.component.html',
   styleUrl: './proyects.component.css'
 })
 export class ProyectsComponent {
-
+  activarAnimacion = false
   contador: number = 0
   proyects: Array<ProyectsUI> = [
     { semana: 1, name: 'Herramientas Clave en el Desarrollo Web', resumen: ' He adquirido conocimientos sobre el mundo del desarrollo web, que abarca diversas especializaciones, como los desarrolladores frontend, responsables de la apariencia visual de los sitios web mediante tecnologías como HTML, CSS y JavaScript, y los desarrolladores backend, que trabajan en la infraestructura y la lógica que sustentan el funcionamiento de un sitio web utilizando lenguajes como Python o Java. También, he comprendido la importancia de los desarrolladores fullstack, que dominan ambas áreas para tener una visión integral del proceso de desarrollo. Además, he descubierto que una herramienta fundamental en este campo es Visual Studio Code, un entorno de desarrollo versátil que facilita la creación, edición y depuración de código en múltiples lenguajes, con extensiones que agilizan el trabajo al proporcionar atajos y sugerencias de código.', imagen: 'qweqwe' },
@@ -29,6 +29,9 @@ export class ProyectsComponent {
   ]
   siguiente() {
     this.contador = this.contador + 1
+    setTimeout(() => {
+      this.activarAnimacion = true
+    }, 2000)
   }
 
   atras() {
