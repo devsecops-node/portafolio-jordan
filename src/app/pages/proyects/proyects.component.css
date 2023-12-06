@@ -1,0 +1,42 @@
+.proyectos{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.proyectos-nav{
+  display:flex;
+  gap: 5px;
+}
+.proyectos-nav p {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.aparecer{
+  animation: apper 2s;
+  -webkit-animation: apper 2s;
+}
+
+@keyframes apper  {
+  0%{
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+100%{
+  filter: blur(0);
+  -webkit-filter: blur(0);
+}
+}
+
+.home-return{
+  position: absolute;
+  top: 0;
+  left: 0;
+}

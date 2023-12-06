@@ -1,0 +1,17 @@
+<section class="proyectos">
+  <h1 class="home-return" [routerLink]="['/']"><a href="">Home</a></h1>
+  <h1>Proyectos</h1>
+  <section>
+    <p class="aparecer">Semana {{proyects[contador].semana}}</p>
+    <p class="aparecer "> Proyecto: {{proyects[contador].name}}</p>
+    <p class="aparecer">{{proyects[contador].resumen}}</p>
+  </section>
+  <nav class="proyectos-nav">
+    @if (contador >0) {
+    <p (click)="atras()">←</p>
+    } @else {
+    <!-- <p>nada</p> -->
+    }
+    <p (click)="siguiente()">→</p>
+  </nav>
+</section>

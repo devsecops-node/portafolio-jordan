@@ -1,0 +1,26 @@
+@if (show_text) {
+<div class="home">
+  <main>
+    <p class="text-1">Jh</p>
+    <p class="text-2">Jordan Huaman - Porfolio</p>
+  </main>
+  <footer>
+    <p class="text-3">Software Engineerin - 2024</p>
+  </footer>
+
+</div>
+} @else {
+<section class="home-view">
+  <div class="home-view_principal">
+    <p class="animar-text" #detect> Hey, I am <span (mouseover)="overSpan($event)"  >Jordan Huaman</span>, I am asphiring to <span class="detect">Software Enginiering</span>
+    </p>
+  </div>
+  <div class="home-view_links">
+    <p class="animar-text line-animation"> <a href="" [routerLink]="['/proyects']">Ver mis proyectos</a></p>
+    <p class="animar-text line-animation"> <a href="" [routerLink]="['/info']">Mas acerca de mi</a></p>
+  </div>
+</section>
+}
+<div class="mouseElement" #mouselement>
+
+</div>
