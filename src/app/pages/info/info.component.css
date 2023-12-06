@@ -6,6 +6,7 @@
   align-items: center;
   margin: 0 auto;
   height: 100%;
+  gap: 20px;
   position: relative;
 }
 .info-return{
@@ -13,5 +14,13 @@
   top: 100px;
   left: 0;
   font-size: 20px;
+  font-weight: bold;
+}
+
+.info_links{
+  display: flex;
+  gap: 5px;
+}
+.info_links a:hover{
   font-weight: bold;
 }

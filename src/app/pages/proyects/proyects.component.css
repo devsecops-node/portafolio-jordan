@@ -40,3 +40,9 @@
   top: 0;
   left: 0;
 }
+
+.proyectos-info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
