@@ -1,0 +1,25 @@
+.home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home main {
+  margin-top: auto;
+}
+
+.text-1,
+.text-2,
+.text-3 {
+  animation: apper 2s;
+  -webkit-animation: apper 2s;
+}
+
+.home main:first-child {
+  text-align: center;
+}
+
+.home footer {
+  margin: auto 0 0 0;
+}
